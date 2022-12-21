@@ -53,8 +53,9 @@
 		<div id="map"></div>
 
 		<div id="button-area">
+			<button onclick="changemap(-8.2864042, 124.7400982,11,'Alor','https://eljohnnews.com/wp-content/uploads/2018/08/alor.jpg')">ALOR</button>
 			<button onclick="changemap(-7.7931578,110.3801537,13,'Yogyakarta','https://images.tokopedia.net/img/KRMmCm/2022/6/16/56b7b2bc-aeab-4fe9-bb3b-b97ce6ccef67.jpg')">JOGJA</button>
-			<button onclick="changemap(-7.5729654,110.8302498,13,'Solo','https://cdns.klimg.com/merdeka.com/i/w/news/2022/11/20/1493864/640x320/7-wisata-malam-solo-yang-indah-dan-menakjubkan-wajib-dikunjungi.jpg')">SOLO</button>
+			<button onclick="changemap(-7.5729654,110.8302498,13,'Solo','https://miro.medium.com/max/1400/1*HpaJWCMxNP7PTL1rSuSLFA.jpeg')">SOLO</button>
 			<button onclick="changemap(-7.2471255,112.7351761,13,'Surabaya','https://ikbis.ac.id/id/wp-content/uploads/2021/03/Anda-di-Surabaya-Inilah-Pentingnya-Menggunakan-Konsultan-Pajak-Surabaya.jpg')">SURABAYA</button>
 			<button onclick="changemap(-3.6933883,128.1822538,15,'Ambon','https://www.celebes.co/maluku/wp-content/uploads/2021/07/Teluk-Ambon.jpg')">AMBON</button>
 			<button onclick="changemap(-2.5398931,140.7053375,13,'Jayapura','https://ecs7.tokopedia.net/blog-tokopedia-com/uploads/2019/01/wisata-jayapura-5-Harian-Papua.png')">JAYAPURA</button>
@@ -96,7 +97,8 @@
 			var marker = L.marker(centermap); //lat, long
 			marker.addTo(map); //Marker ditampilkan ketika halaman dipanggil
 			/* Popup Marker */
-			marker.bindPopup("Ini marker alor <br>" + centermap);
+			marker.bindPopup("Ini Alor <br>" + centermap + "<br><img src='https://eljohnnews.com/wp-content/uploads/2018/08/alor.jpg' width='200px'>");
+			marker.openPopup();
 
 			var baseMaps = {
 				//list basemap
